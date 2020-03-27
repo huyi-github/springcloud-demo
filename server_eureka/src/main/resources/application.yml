@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://127.0.0.1:8080/eureka/
+  server:
+    enable-self-preservation: false
+
+#服务的唯一标识
+spring:
+  application:
+    name: server_eureka
+
